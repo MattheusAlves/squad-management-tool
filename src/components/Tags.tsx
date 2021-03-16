@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '@/styles/createTeam.module.scss'
 
-import { AiOutlineClose as Close } from 'react-icons/Ai'
-import { validateYupSchema } from 'formik'
+import { IoMdClose as Close } from 'react-icons/Io'
 
 export default function Tags({ getTagValue, loadTags = null }) {
   const [tags, setTags] = useState<Array<string>>([])
