@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from '@/styles/createTeam.module.scss'
 
-// import { IoMdClose as Close } from 'react-icons/Io'
-// import { IconContext } from "react-icons/lib" 
+import { IoMdClose as Close } from 'react-icons/io'
 
 export default function Tags({ getTagValue, loadTags = null }) {
   const [tags, setTags] = useState<Array<string>>([])
@@ -59,7 +58,7 @@ export default function Tags({ getTagValue, loadTags = null }) {
             <span key={index}>
               {tag}
               <span onClick={() => handleRemoveTag(tag)}>
-                {/* <Close className={styles['tags-icons']} /> */}
+                <Close className={styles['tags-icons']} />
               </span>
             </span>
           ))}
