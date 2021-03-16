@@ -1,0 +1,102 @@
+.football {
+  &-pitch {
+    position: relative;
+    display: grid;
+    max-width: 450px;
+    grid-template-areas: 'player11 player10 player9' '. player8 .' 'player7 player6 player5' 'player4 player3 player2' '. player1 .';
+    height: 40rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    box-shadow: 1px 1px 0.5rem #ccc;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(
+      180deg,
+      #a2377d,
+      #92337e,
+      #88317f 60%,
+      #772c80 100%
+    );
+    & > div:not(:nth-child(1)) {
+      padding: 5px;
+      border: 2px dashed #ccc;
+      border-radius: 50%;
+    }
+  }
+
+  &-midfield-line {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+  &-midfield-circle {
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  &-player {
+    &-one {
+      grid-area: player1;
+    }
+    &-two {
+      grid-area: player2;
+    }
+    &-three {
+      grid-area: player3;
+    }
+    &-four {
+      grid-area: player4;
+    }
+    &-five {
+      grid-area: player5;
+    }
+    &-six {
+      grid-area: player6;
+    }
+    &-seven {
+      grid-area: player7;
+    }
+    &-eight {
+      grid-area: player8;
+    }
+    &-nine {
+      grid-area: player9;
+    }
+    &-ten {
+      grid-area: player10;
+    }
+    &-eleven {
+      grid-area: player11;
+    }
+  }
+}
+.football-player {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #c50341;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > span {
+    font-size: 2rem;
+    z-index: 10;
+    font-weight: 500;
+  }
+  &-add {
+    color: #fff;
+  }
+  &-initials {
+    color: #343434;
+    cursor: pointer;
+  }
+}

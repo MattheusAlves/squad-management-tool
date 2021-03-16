@@ -1,0 +1,47 @@
+.search {
+  &-players-container {
+    display: flex;
+    flex-direction: column;
+    & > input {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  &-card-players-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.2rem 2rem 1.2rem 1rem;
+    margin: 0.6rem 0;
+    border: 1px dashed darkGray;
+    background: linear-gradient(180deg, #fbfbfb, #eaeaea);
+    border-radius: 3px;
+    box-shadow: 0 0 2px #ccc;
+    cursor: pointer;
+  }
+  &-card-name_age-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+}
+.search-card-name-wrapper,
+.search-card-age-wrapper,
+.search-card-nationality-wrapper {
+  & > span:nth-child(1) {
+    color: #333333;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  & > span:nth-child(2) {
+    color: #cb255a;
+    margin-left: 4px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+.search-card-loading {
+  align-self: center;
+}

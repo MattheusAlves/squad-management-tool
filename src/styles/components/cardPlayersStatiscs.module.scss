@@ -1,0 +1,101 @@
+.card {
+  &-players_statiscs-container {
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      #bf0e4f 0%,
+      #a9165c 60%,
+      #911e6b 80%,
+      #672f88 100%
+    );
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 0fr 1fr;
+    margin-top: 2rem;
+    box-shadow: 1px 1px 1rem #ccc;
+  }
+  &-midfield {
+    height: 100%;
+    width: 1px;
+    background-color: #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-circle {
+      width: 4rem;
+      height: 4rem;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      position: absolute;
+    }
+  }
+}
+
+.player-info {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+    & > span {
+      font-size: 1.3rem;
+    }
+  }
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    position: relative;
+    & span {
+      font-size: 1.5rem;
+    }
+  }
+  &-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 3px solid #8e0876;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.most_picked_player {
+  border-radius: 50%;
+  padding: 2px;
+  border-style: dashed;
+  border-color: #fff;
+  border-width: 2px;
+}
+@media screen and (max-width: 765px) {
+  .card {
+    &-players_statiscs-container {
+      gap: 0.5rem;
+    }
+    &-midfield-circle {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  .player-info {
+    &-container {
+      padding: 1rem;
+      & > span {
+        font-size: 1rem;
+      }
+    }
+    &-wrapper > span{
+      font-size: 1rem;
+    }
+    &-img {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
