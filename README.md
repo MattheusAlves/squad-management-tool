@@ -5,7 +5,7 @@
 
 - yarn && yarn dev
 
-Produção: [Squad Management Tool](https://ms-movies.vercel.app/)
+Produção: [Squad Management Tool](https://squad-management-tool-puce.vercel.app/)
 
 **Screenshots**  
 ![ss1](./screenshots/ss1.png)  
