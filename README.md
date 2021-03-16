@@ -1,5 +1,6 @@
 # Squad Management Tool
 
+### Build with Next.Js, React, SWR, SASS and serverless function
 ## Running
 
 - yarn && yarn dev
