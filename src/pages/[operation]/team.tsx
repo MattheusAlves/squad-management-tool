@@ -42,7 +42,9 @@ export default function team() {
       <Formik
         initialValues={initialState()}
         validate={values => {
-          const errors = {}
+          const errors = {
+            website: ''
+          }
           if (!values.website) {
             errors.website = 'Required'
           } else if (
