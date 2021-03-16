@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import styles from '@/styles/components/teams.module.scss'
-import { MdModeEdit as Edit } from 'react-icons/Md'
-import { BiTrash as Trash, BiShareAlt as Share } from 'react-icons/Bi'
+import { MdModeEdit as Edit } from 'react-icons/md'
+import { BiTrash as Trash, BiShareAlt as Share } from 'react-icons/bi'
 import { useRouter } from 'next/router'
 
 import Link from 'next/link'
